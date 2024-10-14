@@ -26,7 +26,7 @@ sudo chown disenadores:grupodisenadores /home/jony/parcial1/Examenes-UTN/profeso
 
 sudo touch /home/jony/parcial1/validar.txt
 
-sudo -u programadores whoami >> /home/jony/parcial1/validar.txt
+sudo -u programadores whoami > /home/jony/parcial1/validar.txt
 sudo -u tester whoami >> /home/jony/parcial1/validar.txt
 sudo -u analistas whoami >> /home/jony/parcial1/validar.txt
 sudo -u disenadores whoami >> /home/jony/parcial1/validar.txt
