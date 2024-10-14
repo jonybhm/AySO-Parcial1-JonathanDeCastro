@@ -1,16 +1,16 @@
 #!/bin/bash
 
 sudo groupadd grupoprogramadores
-sudo useradd -m -s /bin/bash -c "creando el usuario programadores" -G grupoprogramadores programadores 
+sudo useradd -m -s /bin/bash -c "programadores" -G grupoprogramadores programadores 
 
 sudo groupadd grupotester
-sudo useradd -m -s /bin/bash -c "creando el usuario tester" -G grupotester tester 
+sudo useradd -m -s /bin/bash -c "tester" -G grupotester tester 
 
 sudo groupadd grupoanalistas
-sudo useradd -m -s /bin/bash -c "creando el usuario analistas" -G grupoanalistas analistas 
+sudo useradd -m -s /bin/bash -c "analistas" -G grupoanalistas analistas 
 
 sudo groupadd grupodisenadores
-sudo useradd -m -s /bin/bash -c "creando el usuario disenadores" -G grupodisenadores disenadores 
+sudo useradd -m -s /bin/bash -c "disenadores" -G grupodisenadores disenadores 
 
 sudo mkdir -p $HOME/parcial1/Examenes-UTN/{alumno_{1..3},profesores} 
 
@@ -26,7 +26,7 @@ sudo chown disenadores:grupodisenadores $HOME/parcial1/Examenes-UTN/profesores
 
 sudo touch $HOME/parcial1/validar.txt
 
-sudo -u whoami programadores >> $HOME/parcial1/validar.txt
-sudo -u whoami tester >> $HOME/parcial1/validar.txt
-sudo -u whoami analistas >> $HOME/parcial1/validar.txt
-sudo -u whoami disenadores >> $HOME/parcial1/validar.txt
+sudo -u programadores whoami >> $HOME/parcial1/validar.txt
+sudo -u tester whoami >> $HOME/parcial1/validar.txt
+sudo -u analistas whoami >> $HOME/parcial1/validar.txt
+sudo -u disenadores whoami >> $HOME/parcial1/validar.txt
