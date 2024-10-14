@@ -2,3 +2,7 @@ programadores
 tester
 analistas
 disenadores
+programadores
+tester
+analistas
+disenadores
